@@ -1,80 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-  background: #2B3134;
-  color: #777;
-  text-align: center;
-  font-family: "Gill sans", sans-serif;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Mahip Bajracharya">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="particlejs/particle.css">
+  <link rel="icon" type="image/x-icon" href="logo_blue.png">
 
-  margin: 0 auto;
-}
-h1{
-  margin: 1em 0;
-  border-bottom: 1px dashed;
-  padding-bottom: 1em;
-  font-weight: lighter;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-}
-p{
-  font-style: italic;
-}
-.loader{
-    width: 100vw;
-    height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-justify-content: center;
-align-items: center;}
 
-.loader p{
-    color: #FF6700;
-    font-size: 24px;
-}
-
-/*
-  Set the color of the icon
-*/
-svg path,
-svg rect{
-  fill: #FF6700;
-}
-    </style>
+  <title>Mahip Bajracharya</title>
 </head>
+
 <body>
-    <!-- 5 -->
-<div class="loader loader--style5">
-    <div>
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-    <rect x="0" y="0" width="4" height="10" fill="#333">
-      <animateTransform attributeType="xml"
-        attributeName="transform" type="translate"
-        values="0 0; 0 20; 0 0"
-        begin="0" dur="0.6s" repeatCount="indefinite" />
-    </rect>
-    <rect x="10" y="0" width="4" height="10" fill="#333">
-      <animateTransform attributeType="xml"
-        attributeName="transform" type="translate"
-        values="0 0; 0 20; 0 0"
-        begin="0.2s" dur="0.6s" repeatCount="indefinite" />
-    </rect>
-    <rect x="20" y="0" width="4" height="10" fill="#333">
-      <animateTransform attributeType="xml"
-        attributeName="transform" type="translate"
-        values="0 0; 0 20; 0 0"
-        begin="0.4s" dur="0.6s" repeatCount="indefinite" />
-    </rect>
-  </svg>
+  <div id="particles-js"></div>
+  
+  <!-- backgroud particles.js container -->
+
+<h1 style="display: none;">Meet Mahip Bajracharya, a web developer based in Kathmandu, Nepal. Not only is he a skilled developer, but he also has a passion for fitness and weightlifting. In his free time, you can find him hitting the gym and pushing himself to new limits.</h1>
+  <nav id="navbar">
+    <div class="logo">
+      <a href="/"><img src="logo_blue.png" alt="Logo Image"></a>
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="container1">
+      <div class="halfcon halfht">
+        <div>
+          <h1 class="worddown">HELLO!<span style="font-size:.8em;  margin: auto;">👋</span></h1><br>
+          <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+      </div>
+      <div class="halfcon halfht2"><img src="full_blue.png" class="bimage"></div>
+    </div>
   </div>
-  <div><p>Coming Soon</p></div>
+  
+  
+
+  <div class="cont1"id="about">
+    <img src="/image1.png" class="hero-image">
+    <div class="hero-text">
+      <h3 class="hero-h1">Take Control of Your Money!</h3>
+    </div>
+  </div>
+
+
+
+
+<div>
+  <img src="photo.png" class="img_div">
 </div>
-    
+
+
+
+
+  <!--Header ends-->
+
+  <!--Content starts-->
+  <div class="wavecontent footerwave" id="contact">
+
+    <a href="https://www.facebook.com/mahip.bajracharya" target="_blank" rel="noopener noreferrer"><i
+        class="fa fa-brands fa-facebook-f  fa-2x"></i></a>
+    <a href="#" target="_blank" rel="noopener noreferrer"> <i
+        class="fa-brands fa-linkedin-in fa-2x fa"></i></a>
+    <a href="https://www.instagram.com/mbazracharya007/"
+      target="_blank" rel="noopener noreferrer">
+      <i class="fa fa-brands fa-instagram fa-2x"></i></a>
+      <span style="color: aliceblue;">	contact@mahipbajracharya.com.np</span>
+
+  </div>
+  <!--Content ends-->
+
+
+
+
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+  <script src="particlejs/particle.js"></script>
+
+
+  <script src="navbar/nav.js"></script>
+  <script src="/t.js"></script>
+
 </body>
+
 </html>

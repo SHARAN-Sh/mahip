@@ -264,21 +264,9 @@ input {
     animation: none;
 }
 
-.det_cont{
-    width: 60%;
-    margin: auto;
-    border-radius: 25px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    margin-bottom: 10rem;
-
-}
-.det_cont_p{
-    padding: 5rem;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    line-height: 1.8;
-    font-weight: 300;
-
+.img_div{
+    width: 100%;
+    overflow: hidden;
 }
 
 
@@ -512,23 +500,12 @@ input {
         color: #3a79ba;
     
       }
-      .det_cont{
-        width: 90%;
-        margin: auto;
-        border-radius: 25px;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        margin-bottom: 7rem;
-        margin-top: 7rem;
+      .img_div{
+        height: 100vh;
+        object-fit: cover;
+        object-position: 0% 100%;
+        
+    }
 
-    
-    }
-    .det_cont_p{
-        padding: 2rem;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        line-height: 1.8;
-        font-weight: 300;
-    
-    }
 
 }
